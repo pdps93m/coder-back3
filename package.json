@@ -1,0 +1,27 @@
+{
+  "name": "coder-backend-iii",
+  "version": "1.0.0",
+  "description": "Proyecto backend III - Entrega de mocking de datos",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "mongodb",
+    "mocking"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@faker-js/faker": "^10.1.0",
+    "bcrypt": "^6.0.0",
+    "dotenv": "^17.2.3",
+    "express": "^4.21.2",
+    "mongoose": "^8.19.3"
+  }
+}
