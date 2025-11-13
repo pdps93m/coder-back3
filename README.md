@@ -1,71 +1,38 @@
-# Backend III - Sistema de Mocking de Datos
+# Backend III - Entrega 1
 
-Proyecto de Node.js + Express + MongoDB para generación y gestión de datos mock.
+Proyecto de Node.js con Express y MongoDB para generacion de datos mock.
 
-## 🚀 Instalación
+## Instalacion
 
 ```bash
 npm install
 ```
 
-## ⚙️ Configuración
+## Configuracion
 
-1. Copia el archivo `.env` y configura tu URL de MongoDB:
+Crear archivo .env con:
 ```
 MONGODB_URI=mongodb://localhost:27017/coder_backend_iii
 PORT=3000
 ```
 
-2. Asegúrate de tener MongoDB ejecutándose localmente o usa MongoDB Atlas.
+## Ejecucion
 
-## 🏃 Ejecución
-
-### Modo desarrollo
-```bash
-npm run dev
-```
-
-### Modo producción
 ```bash
 npm start
 ```
 
-## 📡 Endpoints Disponibles
+## Endpoints
 
 ### Mocking
-
-- **GET** `/api/mocks/mockingpets` - Genera mascotas mock
-- **GET** `/api/mocks/mockingusers` - Genera 50 usuarios mock
-- **POST** `/api/mocks/generateData` - Inserta datos en la BD
-  ```json
-  {
-    "users": 10,
-    "pets": 20
-  }
-  ```
+- GET /api/mocks/mockingpets
+- GET /api/mocks/mockingusers
+- POST /api/mocks/generateData
 
 ### Consulta
+- GET /api/users
+- GET /api/pets
 
-- **GET** `/api/users` - Lista todos los usuarios
-- **GET** `/api/pets` - Lista todas las mascotas
+## Tecnologias
 
-## 📁 Estructura del Proyecto
-
-```
-src/
-├── app.js              # Punto de entrada
-├── config/             # Configuración (DB, etc)
-├── models/             # Modelos de Mongoose
-├── routes/             # Rutas de la API
-├── controllers/        # Lógica de controladores
-├── services/           # Lógica de negocio
-└── utils/              # Utilidades y helpers
-```
-
-## 🛠️ Tecnologías
-
-- Node.js
-- Express
-- MongoDB + Mongoose
-- Bcrypt (encriptación)
-- Faker.js (generación de datos)
+Node.js, Express, MongoDB, Mongoose, Bcrypt, Faker
